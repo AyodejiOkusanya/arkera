@@ -45,5 +45,3 @@ class MainTable extends React.Component {
 }
 
 export default MainTable
-
-

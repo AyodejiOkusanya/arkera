@@ -2,23 +2,15 @@ import React from 'react'
 import MainTable from './mainTable'
 
 class HundredFifty extends React.Component {
-    orderByHundredFifty = () => {
-        console.log('working')
-        return this.props.cityData.sort((a,b) => {
-            
-            return a['150m+'] - b['150m+']
-        })
-      }
+  orderByHundredFifty = () => {
+    return this.props.cityData.sort((a, b) => {
+      return a['150m+'] - b['150m+']
+    })
+  }
 
-
-
-
-    render() {
-        return (
-            <MainTable cityData={this.orderByHundredFifty()} />
-        )
-    }
+  render () {
+    return <MainTable cityData={this.orderByHundredFifty()} />
+  }
 }
 
-
-export default HundredFifty 
+export default HundredFifty

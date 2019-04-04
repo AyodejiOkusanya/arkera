@@ -1,47 +1,38 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
-import { Route, withRouter, Switch, Link } from 'react-router-dom'
-
-
+import { Link } from 'react-router-dom'
 
 class Navbar extends React.Component {
-    state = {}
+  state = {}
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  
-    render() {
-      const { activeItem } = this.state
-  
-      return (
-        <Menu>
-             <Link to='/'>
-          <Menu.Item
-            name='home'
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-          >
-          
-            Original Table 
-          </Menu.Item>
-          </Link>
-            <Link to='/city'>
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render () {
+    const { activeItem } = this.state
+
+    return (
+      <Menu>
+        <Link to='/city'>
           <Menu.Item
             name='city'
             active={activeItem === 'city'}
             onClick={this.handleItemClick}
           >
-          
             City
           </Menu.Item>
-          </Link>
+        </Link>
 
         <Link to='/country'>
-          <Menu.Item name='country' active={activeItem === 'country'} onClick={this.handleItemClick}>
-            Country 
+          <Menu.Item
+            name='country'
+            active={activeItem === 'country'}
+            onClick={this.handleItemClick}
+          >
+            Country
           </Menu.Item>
-          </Link>
-  
-          <Link to='/allBuildings'>
+        </Link>
+
+        <Link to='/allBuildings'>
           <Menu.Item
             name='All Buildings'
             active={activeItem === 'All Buildings'}
@@ -49,9 +40,9 @@ class Navbar extends React.Component {
           >
             All Buildings
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/100+'>
+        <Link to='/100+'>
           <Menu.Item
             name='100m+'
             active={activeItem === '100m+'}
@@ -59,60 +50,60 @@ class Navbar extends React.Component {
           >
             100m+
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/150+'>
+        <Link to='/150+'>
           <Menu.Item
             name='150m+'
             active={activeItem === '150m+'}
             onClick={this.handleItemClick}
           >
-            150m+ 
+            150m+
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/200+'>
+        <Link to='/200+'>
           <Menu.Item
             name='200m+'
             active={activeItem === '200m+'}
             onClick={this.handleItemClick}
           >
-            200m+ 
+            200m+
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/300+'>
+        <Link to='/300+'>
           <Menu.Item
             name='300m+'
             active={activeItem === '300m+'}
             onClick={this.handleItemClick}
           >
-            300m+ 
+            300m+
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/telecomTowers'>
+        <Link to='/telecomTowers'>
           <Menu.Item
             name='telecom towers'
             active={activeItem === 'telecom towers'}
             onClick={this.handleItemClick}
           >
-            Telecom Towers 
+            Telecom Towers
           </Menu.Item>
-          </Link>
+        </Link>
 
-          <Link to='/allStructures'>
+        <Link to='/allStructures'>
           <Menu.Item
             name='all structures'
             active={activeItem === 'all structures'}
             onClick={this.handleItemClick}
           >
-            All Structures 
+            All Structures
           </Menu.Item>
-          </Link>
-        </Menu>
-      )
-    }
+        </Link>
+      </Menu>
+    )
+  }
 }
 
-export default Navbar 
+export default Navbar
