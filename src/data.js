@@ -1,6 +1,6 @@
 								
 
-export const data = [
+const  data = [
 
     {
         city:'New York City' , 
@@ -449,3 +449,5 @@ export const data = [
     }
     
     ]
+
+    export default data 
