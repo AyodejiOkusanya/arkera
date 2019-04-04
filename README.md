@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Arkera
 
-## Available Scripts
 
 In the project directory, you can run:
 
@@ -37,32 +36,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `Sorting`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To sort by column name, click on the relevant column name in the navigation bar above the table. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `Running the App Locally`
 
-### Code Splitting
+To run the app locally make sure you have npm installed on your device. To download npm follow the instructions in the link below. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+https://www.npmjs.com/get-npm
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You should now be able to 'cd' into the app and run 'npm start' to run the applicaiton. 
